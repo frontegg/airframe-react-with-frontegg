@@ -9,12 +9,13 @@ const basePath = process.env.BASE_PATH || '/';
 
 const AppClient = () => {
     return (
-        <Router basename={ basePath }>
-            <AppLayout>
-                <RoutedContent />
-            </AppLayout>
-        </Router>
+        // <Router basename={basePath}>
+        <AppLayout>
+            <RoutedContent />
+        </AppLayout>
+        // </Router>
     );
 }
 
-export default hot(module)(AppClient);
+// export default hot(module)(AppClient);
+export default AppClient;

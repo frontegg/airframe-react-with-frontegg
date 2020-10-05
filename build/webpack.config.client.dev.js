@@ -60,7 +60,7 @@ module.exports = {
                 test: /\.css$/,
                 use: [
                     { loader: 'style-loader' },
-                    { 
+                    {
                         loader: 'css-loader',
                         options: {
                             modules: true,
@@ -102,7 +102,7 @@ module.exports = {
                     'css-loader',
                     'postcss-loader'
                 ],
-                include: [path.resolve(config.srcDir, 'styles')]
+                include: [path.resolve(config.srcDir, 'styles'), /node_modules/]
             },
             {
                 test: /\.scss$/,
@@ -144,7 +144,7 @@ module.exports = {
         historyApiFallback: {
             index: BASE_PATH
         },
-        host: '0.0.0.0',
-        port: 4100
+        host: 'localhost',
+        port: 3000
     }
 }

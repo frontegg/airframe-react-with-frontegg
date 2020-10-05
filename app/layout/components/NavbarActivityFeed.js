@@ -37,15 +37,15 @@ const activityFeedIcons = [
 /*eslint-enable */
 
 const NavbarActivityFeed = (props) => (
-    <UncontrolledDropdown nav inNavbar { ...props }>
-        <DropdownToggle nav>
+    <UncontrolledDropdown nav inNavbar {...props}>
+        {/* <DropdownToggle nav>
             <IconWithBadge
-                badge={ <Badge pill color="primary">6</Badge> }
+                badge={<Badge pill color="primary">6</Badge>}
             >
                 <i className="fa fa-bell-o fa-fw" />
             </IconWithBadge>
-        </DropdownToggle>
-        <ExtendedDropdown right>
+        </DropdownToggle> */}
+        {/* <ExtendedDropdown right>
             <ExtendedDropdown.Section className="d-flex justify-content-between align-items-center">
                 <h6 className="mb-0">Activity Feed</h6>
                 <Badge pill>4</Badge>
@@ -82,7 +82,7 @@ const NavbarActivityFeed = (props) => (
                 See All Notifications
                 <i className="fa fa-angle-right fa-fw ml-2" />
             </ExtendedDropdown.Section>
-        </ExtendedDropdown>
+        </ExtendedDropdown> */}
     </UncontrolledDropdown>
 );
 NavbarActivityFeed.propTypes = {

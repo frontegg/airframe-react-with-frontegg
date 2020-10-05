@@ -8,16 +8,16 @@ import {
     SidebarTrigger
 } from './../../components';
 
-import { NavbarActivityFeed } from './NavbarActivityFeed';
 import { NavbarMessages } from './NavbarMessages';
 import { NavbarUser } from './NavbarUser';
 import { LogoThemed } from './../../routes/components/LogoThemed/LogoThemed';
+import { Notifications } from '@frontegg/react';
 
 export const DefaultNavbar = () => (
     <Navbar light expand="xs" fluid>
         <Nav navbar>
             <NavItem className="mr-3">
-                <SidebarTrigger/>
+                <SidebarTrigger />
             </NavItem>
             <NavItem className="navbar-brand d-lg-none">
                 <Link to="/">
@@ -45,7 +45,7 @@ export const DefaultNavbar = () => (
             </NavItem>
         </Nav>
         <Nav navbar className="ml-auto">
-            <NavbarActivityFeed />
+            <Notifications />
             <NavbarMessages className="ml-2" />
             <NavbarUser className="ml-2" />
         </Nav>

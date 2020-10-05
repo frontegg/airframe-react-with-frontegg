@@ -63,7 +63,7 @@ module.exports = {
                 test: /\.css$/,
                 use: [
                     ExtractCssChunks.loader,
-                    { 
+                    {
                         loader: 'css-loader',
                         options: {
                             modules: true,
@@ -111,8 +111,8 @@ module.exports = {
                 test: /\.scss$/,
                 use: [
                     ExtractCssChunks.loader,
-                    { loader: 'css-loader' }, 
-                    { loader: 'postcss-loader' }, 
+                    { loader: 'css-loader' },
+                    { loader: 'postcss-loader' },
                     {
                         loader: 'sass-loader',
                         options: {
@@ -147,7 +147,7 @@ module.exports = {
         historyApiFallback: {
             index: '/'
         },
-        host: '0.0.0.0',
-        port: 4100
+        host: 'localhost',
+        port: 3000
     }
 }
